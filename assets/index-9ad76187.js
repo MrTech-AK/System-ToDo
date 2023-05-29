@@ -355,6 +355,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 `,wj=m1`
   * {
     font-family: "Poppins", sans-serif !important;
+    -webkit-tap-highlight-color: transparent;
     &::selection {
       background-color: #9a52ff;
     }
@@ -389,7 +390,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
   body {
     margin: 8px 16vw;
-
+    touch-action: manipulation;
     @media (max-width: 1024px) {
       margin: 20px;
     }
