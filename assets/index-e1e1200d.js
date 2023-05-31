@@ -336,12 +336,13 @@ from {
 `,Lj=Z.div`
   /* animation: ${Vv} 0.5s ease-in; */
   border: 3px solid #b624ff;
+  box-shadow: 0 0 14px 0 #b624ff;
   display: inline-flex;
   position: relative;
   align-items: center;
   justify-content: left;
   gap: 8px 16px;
-  padding: 12px 24px;
+  padding: 16px 24px;
   margin: 24px 0 12px 0;
   border-radius: 16px;
 `,Dj=Z.div`
