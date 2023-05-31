@@ -301,9 +301,7 @@ to {
 from {
   opacity: 0;
 }
-to {
-  opacity: 1;
-  }
+
 `;Yt`
   from{
     transform: translateX(-100%);
@@ -336,7 +334,7 @@ to {
     justify-content: left;
   } */
 `,Lj=Z.div`
-  animation: ${Vv} 0.5s ease-in;
+  /* animation: ${Vv} 0.5s ease-in; */
   border: 3px solid #b624ff;
   display: inline-flex;
   position: relative;
@@ -344,7 +342,7 @@ to {
   justify-content: left;
   gap: 8px 16px;
   padding: 12px 24px;
-  margin: 16px 0;
+  margin: 24px 0 12px 0;
   border-radius: 16px;
 `,Dj=Z.div`
   line-height: 1.75em;
@@ -465,7 +463,7 @@ to {
   border-left: ${e=>e.done?"6px solid #00ff0d":"6px solid transparent"};
   padding: 16px;
   border-radius: 20px;
-  animation: ${Vv} 0.75s ease;
+  animation: ${Vv} 0.5s ease;
 `,Gj=Z.span`
   text-decoration: none;
   margin-right: 12px;
