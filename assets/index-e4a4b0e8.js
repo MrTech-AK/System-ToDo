@@ -226,7 +226,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   } */
   div[role="dialog"] {
     border-radius: 32px 32px 0 0;
-    z-index: 9999;
+    z-index: 999999;
   }
 
   div[data-rsbs-header="true"] {
@@ -889,7 +889,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   width: 100%;
   margin: 0;
   animation: ${qM} 0.5s ease;
-  z-index: 99999999999;
+  z-index: 9999;
 `,P_=K(O$)`
   border-radius: 30px 30px 0 0;
   background: #232e58;
