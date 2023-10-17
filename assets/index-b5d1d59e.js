@@ -1022,7 +1022,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   &:hover {
     background-color: #f0f0f0;
   }
-`,vB=({user:e})=>{const t=pl(),n=dl(),[r,o]=d.useState(),a=Zr();return d.useEffect(()=>{if(n.pathname.split("/")[1]==="task")o(0);else switch(n.pathname){case"/categories":o(1);break;case"/add":o(2);break;case"/import-export":o(3);break;case"/user":o(4);break;case"/":o(0);break;default:o(void 0)}},[n.pathname]),t?p.jsx(bB,{children:p.jsxs(xB,{showLabels:!0,value:r,onChange:(i,f)=>{window.scrollTo({top:0,behavior:"smooth"}),o(f),i.preventDefault()},children:[p.jsx(Tf,{onClick:()=>a("/"),label:"Tasks",icon:p.jsx(PA,{})}),p.jsx(Tf,{onClick:()=>a("/categories"),label:"Categories",icon:p.jsx(jx,{}),disabled:!e.settings[0].enableCategories}),p.jsx(Tf,{onClick:()=>a("add"),showLabel:!1,label:"Add New",icon:p.jsx(yB,{fontSize:"large",animate:e.tasks.length===0&&r!==2?!0:void 0})}),p.jsx(Tf,{onClick:()=>a("import-export"),label:"Import/Export",icon:p.jsx(Rx,{})}),p.jsx(Tf,{onClick:()=>a("user"),label:"Profile",icon:p.jsx(Tx,{})})]})}):null},yB=G(Cx)`
+`,vB=({user:e})=>{const t=pl(),n=dl(),[r,o]=d.useState(),a=Zr();return d.useEffect(()=>{if(n.pathname.split("/")[1]==="task")o(0);else switch(n.pathname){case"/categories":o(1);break;case"/add":o(2);break;case"/import-export":o(3);break;case"/user":o(4);break;case"/":o(0);break;default:o(void 0)}},[n.pathname]),t?p.jsx(bB,{children:p.jsxs(xB,{showLabels:!0,value:r,onChange:(i,f)=>{window.scrollTo({top:0,behavior:"smooth"}),o(f),i.preventDefault()},children:[p.jsx(Tf,{onClick:()=>a("/"),label:"Tasks",icon:p.jsx(PA,{})}),p.jsx(Tf,{onClick:()=>a("/categories"),label:"Categories",icon:p.jsx(jx,{}),disabled:!e.settings[0].enableCategories}),p.jsx(Tf,{onClick:()=>a("add"),showLabel:!1,icon:p.jsx(yB,{fontSize:"large",animate:e.tasks.length===0&&r!==2?!0:void 0})}),p.jsx(Tf,{onClick:()=>a("import-export"),label:"Import/Export",icon:p.jsx(Rx,{})}),p.jsx(Tf,{onClick:()=>a("user"),label:"Profile",icon:p.jsx(Tx,{})})]})}):null},yB=G(Cx)`
   border: 2px solid ${me.purple};
   background-color: #232e58;
 
@@ -1042,7 +1042,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   border-radius: 28px 28px 0 0;
   background: #232e58;
   margin: 0px 20px 0px -20px;
-  padding: 14px 10px;
+  padding: 16px 10px 24px 10px;
 `,Tf=G(g$)`
   border-radius: 18px;
   margin: 4px;
