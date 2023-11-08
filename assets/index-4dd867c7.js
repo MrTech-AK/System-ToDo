@@ -307,6 +307,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     border-radius: 8px !important;
     font-size: 12px !important;
   }
+  .MuiBottomNavigationAction-root {
+    padding: 12px !important;
+    margin: 0 !important;
+    max-height: none;
+  }
 `,UM=()=>p.jsx(A6,{styles:BM}),Ur=G(Jt)`
   padding: 10px 16px;
   border-radius: 16px;
@@ -1056,7 +1061,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   background-color: #232e58;
   font-size: 38px;
   border-radius: 100px;
-  padding: 8px;
+  padding: 6px;
+  margin: 14px;
   ${({animate:e})=>e&&ef`
       animation: ${Px} 1.2s infinite;
     `}
