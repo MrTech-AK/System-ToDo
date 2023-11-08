@@ -1056,7 +1056,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   background-color: #232e58;
   font-size: 38px;
   border-radius: 100px;
-  padding: 6px;
+  padding: 8px;
   ${({animate:e})=>e&&ef`
       animation: ${Px} 1.2s infinite;
     `}
@@ -1068,11 +1068,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   animation: ${HM} 0.5s ease;
   z-index: 999; /*9999*/
 `,SB=Y(d$)`
-  border-radius: 18px 18px 0 0;
+  border-radius: 24px 24px 0 0;
   background: #232e58e1;
   backdrop-filter: blur(18px);
   margin: 0px 20px 0px -20px;
-  padding: 16px 10px 32px 10px;
+  padding: 18px 10px 32px 10px;
 `,Mf=Y(x$)`
   border-radius: 18px;
   margin: 4px;
