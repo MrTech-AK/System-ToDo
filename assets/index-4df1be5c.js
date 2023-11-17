@@ -218,8 +218,38 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }
   }
 
+  //FIXME:
   body {
-    background-color: gray;
+    margin: 8px 16vw;
+    touch-action: manipulation;
+    /* background: linear-gradient(180deg, #232e58 0%, #171d34 100%);
+    background-attachment: fixed;
+    background-size: cover; */
+    background-color: #232e58;
+    @media (max-width: 1024px) {
+      margin: 20px;
+    }
+
+    /* Custom Scrollbar Styles */
+    ::-webkit-scrollbar {
+      width: 8px;
+
+      background-color: #232e58;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #6d2aff;
+      border-radius: 64px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #8750ff;
+    }
+
+    ::-webkit-scrollbar-track {
+      border-radius: 64px;
+      background-color: #232e58;
+    }
   }
 
   pre {
