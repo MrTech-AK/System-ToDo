@@ -228,7 +228,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }
 
     /* Custom Scrollbar Styles */
-    ::-webkit-scrollbar {
+    /* ::-webkit-scrollbar {
       width: 8px;
 
       background-color: #232e58;
@@ -246,7 +246,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     ::-webkit-scrollbar-track {
       border-radius: 64px;
       background-color: #232e58;
-    }
+    } */
   }
 
   pre {
