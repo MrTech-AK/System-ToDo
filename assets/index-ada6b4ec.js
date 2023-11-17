@@ -197,7 +197,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   /* div[data-rsbs-backdrop="true"] {
     backdrop-filter: blur(2px);
   } */
-  div[role="dialog"] {
+
+  /* div[role="dialog"] {
     border-radius: 42px 42px 0 0;
     z-index: 9999999;
   }
@@ -215,10 +216,38 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       background: #cfcfcf;
       margin-top: 2px;
     }
-  }
+  } */
 
   body {
-    background-color: #333;
+    margin: 8px 16vw;
+    touch-action: manipulation;
+    background: linear-gradient(180deg, #232e58 0%, #171d34 100%);
+    background-attachment: fixed;
+    background-size: cover;
+    @media (max-width: 1024px) {
+      margin: 20px;
+    }
+
+    /* Custom Scrollbar Styles */
+    ::-webkit-scrollbar {
+      width: 8px;
+
+      background-color: #232e58;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #6d2aff;
+      border-radius: 64px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #8750ff;
+    }
+
+    ::-webkit-scrollbar-track {
+      border-radius: 64px;
+      background-color: #232e58;
+    }
   }
 
   pre {
