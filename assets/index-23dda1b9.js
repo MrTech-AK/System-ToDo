@@ -222,9 +222,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   body {
     margin: 8px 16vw;
     touch-action: manipulation;
-    background: linear-gradient(180deg, #232e58 0%, #171d34 100%);
-    /* background-attachment: fixed;
-    background-size: cover; */
+    /* background: linear-gradient(180deg, #232e58 0%, #171d34 100%); */
+    background: #232e58;
+    background-attachment: fixed;
+    background-size: cover;
     @media (max-width: 1024px) {
       margin: 20px;
     }
