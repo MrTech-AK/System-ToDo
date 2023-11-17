@@ -203,11 +203,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     z-index: 9999999;
   }
 
-  div[data-rsbs-backdrop="true"] {
+  /* div[data-rsbs-backdrop="true"] {
     z-index: 999;
-  }
+  } */
 
-  /* div[data-rsbs-header="true"] {
+  div[data-rsbs-header="true"] {
     z-index: 999999;
     &::before {
       width: 60px;
@@ -216,7 +216,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       background: #cfcfcf;
       margin-top: 2px;
     }
-  } */
+  }
 
   body {
     margin: 8px 16vw;
