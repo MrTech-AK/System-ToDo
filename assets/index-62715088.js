@@ -425,18 +425,25 @@ from {
   align-items: center;
   justify-content: left;
   gap: 8px 16px;
-  padding: 24px 24px;
+  padding: 20px 24px;
   margin: 24px 0 12px 0;
   border-radius: 24px;
   width: 650px;
+  @media (min-width: 1024px) {
+    padding: 24px;
+  }
 `,fA=G.div`
   line-height: 1.75;
   margin-left: 6px;
 `,sA=G.h4`
   margin: 0;
   font-size: 16px;
+  @media (min-width: 1024px) {
+    font-size: 17px;
+  }
 `,lA=G.p`
   margin: 0;
+  font-size: 16px;
 `,cA=G(Da)`
   top: 0;
   left: 0;
@@ -448,7 +455,7 @@ from {
   justify-content: center;
   background-color: #090b2287;
   border-radius: 100px;
-  margin: -6px;
+  margin: -5px;
   border: 1px solid #44479cb7;
 `,uA=G.div`
   display: flex;
@@ -1471,31 +1478,61 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     color: #ffffff58;
     border-color: #ffffff58;
   }
-`,vU=({user:e,setUser:t})=>{const[n,r]=u.useState(""),[o,a]=u.useState(0),[i,f]=u.useState(0),[s,l]=u.useState(0),c=i/e.tasks.length*100;u.useEffect(()=>{r(Z2()),document.title="Todo App";const h=setInterval(()=>{r(Z2()),a(m=>m+1)},6e3);return()=>clearInterval(h)},[]),u.useEffect(()=>{const h=e.tasks.filter(b=>b.done).length;f(h);const m=new Date().setHours(0,0,0,0),y=e.tasks.filter(b=>b.deadline?new Date(b.deadline).setHours(0,0,0,0)===m&&!b.done:!1).length;l(y)},[e.tasks]);const p=ew();return d.jsxs(d.Fragment,{children:[d.jsxs(rA,{children:[d.jsx(dt,{unified:"1f44b",emojiStyle:e.emojisStyle}),"   ",hA(),e.name&&", "+e.name]}),d.jsx(oA,{children:n},o),!p&&d.jsxs(uA,{children:[d.jsx(_x,{})," You're offline but you can use the app!"]}),e.tasks.length>0&&d.jsx(aA,{children:d.jsxs(iA,{glow:e.settings[0].enableGlow,children:[d.jsxs(Da,{sx:{position:"relative",display:"inline-flex"},children:[d.jsx(uO,{variant:"determinate",value:c,size:64,thickness:5,style:{filter:e.settings[0].enableGlow?`drop-shadow(0 0 6px ${ce.purple})`:"none",zIndex:1,margin:"2px"}}),d.jsx(cA,{children:d.jsx($r,{variant:"caption",component:"div",color:"white",sx:{fontSize:"16px",fontWeight:500},children:`${Math.round(c)}%`})})]}),d.jsxs(fA,{children:[d.jsxs(sA,{children:["You have ",e.tasks.length-i," unfinished tasks"," ",i>0&&`and ${i} done`]}),d.jsx(lA,{children:bA(c)}),s>0&&d.jsxs("span",{children:["Tasks due today: ",s]})]})]})}),d.jsx(NN,{user:e,setUser:t}),d.jsx(HD,{animate:e.tasks.length===0,user:e})]})},yU=({user:e})=>{var o;const{id:t}=wD(),n=t==null?void 0:t.replace(".",""),r=e.tasks.find(a=>a.id.toString().replace(".","")===n);return r?d.jsxs(d.Fragment,{children:[d.jsx(bl,{title:"Task Details"}),d.jsxs(bU,{style:{border:`2px solid ${r.color}`,boxShadow:`0 0 300px -50px ${r.color}`},children:[d.jsxs(xU,{children:["Task: ",r.name]}),d.jsx(wU,{children:d.jsxs("tbody",{children:[d.jsxs(Dr,{children:[d.jsx(Nr,{children:"Emoji:"}),d.jsx(Lr,{children:r.emoji?d.jsxs(d.Fragment,{children:[d.jsx(dt,{unified:(r==null?void 0:r.emoji)||"",size:32,emojiStyle:e.emojisStyle})," (",r.emoji,")"]}):d.jsx("i",{children:"none"})})]}),d.jsxs(Dr,{children:[d.jsx(Nr,{children:"Description:"}),d.jsx(Lr,{children:r==null?void 0:r.description})]}),d.jsxs(Dr,{children:[d.jsx(Nr,{children:"Color:"}),d.jsxs(Lr,{children:[d.jsx(kU,{clr:r.color})," ",r.color.toUpperCase()]})]}),d.jsxs(Dr,{children:[d.jsx(Nr,{children:"Created:"}),d.jsx(Lr,{children:new Date((r==null?void 0:r.date)||"").toLocaleString()})]}),(r==null?void 0:r.lastSave)&&d.jsxs(Dr,{children:[d.jsx(Nr,{children:"Last edited:"}),d.jsx(Lr,{children:new Date((r==null?void 0:r.lastSave)||"").toLocaleString()})]}),(r==null?void 0:r.deadline)&&d.jsxs(Dr,{children:[d.jsx(Nr,{children:"Task deadline:"}),d.jsx(Lr,{children:new Date((r==null?void 0:r.deadline)||"").toLocaleString()})]}),d.jsxs(Dr,{children:[d.jsx(Nr,{children:"Done:"}),d.jsxs(Lr,{children:[r!=null&&r.done?d.jsx(qs,{}):d.jsx(e3,{})," ",r==null?void 0:r.done.toString()]})]}),d.jsxs(Dr,{children:[d.jsx(Nr,{children:"Pinned:"}),d.jsxs(Lr,{children:[r!=null&&r.pinned?d.jsx(qs,{}):d.jsx(e3,{})," ",r==null?void 0:r.pinned.toString()]})]}),d.jsxs(Dr,{children:[d.jsx(Nr,{children:"Categories:"}),d.jsx(Lr,{children:d.jsx(SU,{children:(o=r==null?void 0:r.category)==null?void 0:o.map(a=>d.jsx(ju,{backgroundclr:a.color,glow:!1,label:a.name,avatar:a.emoji?d.jsx(Qr,{alt:a.name,sx:{background:"transparent",borderRadius:"0px"},children:a.emoji&&(e.emojisStyle===Fe.NATIVE?d.jsx("div",{children:d.jsx(dt,{size:18,unified:a.emoji,emojiStyle:Fe.NATIVE})}):d.jsx(dt,{size:20,unified:a.emoji,emojiStyle:e.emojisStyle}))}):d.jsx(d.Fragment,{})},a.id))})})]})]})})]})]}):d.jsx(dg,{})},bU=G.div`
+`,vU=({user:e,setUser:t})=>{const[n,r]=u.useState(""),[o,a]=u.useState(0),[i,f]=u.useState(0),[s,l]=u.useState(0),c=i/e.tasks.length*100;u.useEffect(()=>{r(Z2()),document.title="Todo App";const h=setInterval(()=>{r(Z2()),a(m=>m+1)},6e3);return()=>clearInterval(h)},[]),u.useEffect(()=>{const h=e.tasks.filter(b=>b.done).length;f(h);const m=new Date().setHours(0,0,0,0),y=e.tasks.filter(b=>b.deadline?new Date(b.deadline).setHours(0,0,0,0)===m&&!b.done:!1).length;l(y)},[e.tasks]);const p=ew();return d.jsxs(d.Fragment,{children:[d.jsxs(rA,{children:[d.jsx(dt,{unified:"1f44b",emojiStyle:e.emojisStyle}),"   ",hA(),e.name&&", "+e.name]}),d.jsx(oA,{children:n},o),!p&&d.jsxs(uA,{children:[d.jsx(_x,{})," You're offline but you can use the app!"]}),e.tasks.length>0&&d.jsx(aA,{children:d.jsxs(iA,{glow:e.settings[0].enableGlow,children:[d.jsxs(Da,{sx:{position:"relative",display:"inline-flex"},children:[d.jsx(uO,{variant:"determinate",value:c,size:64,thickness:5,style:{filter:e.settings[0].enableGlow?`drop-shadow(0 0 6px ${ce.purple})`:"none",zIndex:1,margin:"1px"}}),d.jsx(cA,{children:d.jsx($r,{variant:"caption",component:"div",color:"white",sx:{fontSize:"16px",fontWeight:500},children:`${Math.round(c)}%`})})]}),d.jsxs(fA,{children:[d.jsxs(sA,{children:["You have ",e.tasks.length-i," unfinished tasks"," ",i>0&&`and ${i} done`]}),d.jsx(lA,{children:bA(c)}),s>0&&d.jsxs("span",{children:["Tasks due today: ",s]})]})]})}),d.jsx(NN,{user:e,setUser:t}),d.jsx(HD,{animate:e.tasks.length===0,user:e})]})},yU=({user:e})=>{var o;const{id:t}=wD(),n=t==null?void 0:t.replace(".",""),r=e.tasks.find(a=>a.id.toString().replace(".","")===n);return r?d.jsxs(d.Fragment,{children:[d.jsx(bl,{title:"Task Details"}),d.jsxs(bU,{style:{border:`2px solid ${r.color}`,boxShadow:`0 0 300px -50px ${r.color}`},children:[d.jsxs(xU,{children:["Task: ",r.name]}),d.jsx(wU,{children:d.jsxs("tbody",{children:[d.jsxs(Dr,{children:[d.jsx(Nr,{children:"Emoji:"}),d.jsx(Lr,{children:r.emoji?d.jsxs(d.Fragment,{children:[d.jsx(dt,{unified:(r==null?void 0:r.emoji)||"",size:32,emojiStyle:e.emojisStyle})," (",r.emoji,")"]}):d.jsx("i",{children:"none"})})]}),d.jsxs(Dr,{children:[d.jsx(Nr,{children:"Description:"}),d.jsx(Lr,{children:r==null?void 0:r.description})]}),d.jsxs(Dr,{children:[d.jsx(Nr,{children:"Color:"}),d.jsxs(Lr,{children:[d.jsx(kU,{clr:r.color})," ",r.color.toUpperCase()]})]}),d.jsxs(Dr,{children:[d.jsx(Nr,{children:"Created:"}),d.jsx(Lr,{children:new Date((r==null?void 0:r.date)||"").toLocaleString()})]}),(r==null?void 0:r.lastSave)&&d.jsxs(Dr,{children:[d.jsx(Nr,{children:"Last edited:"}),d.jsx(Lr,{children:new Date((r==null?void 0:r.lastSave)||"").toLocaleString()})]}),(r==null?void 0:r.deadline)&&d.jsxs(Dr,{children:[d.jsx(Nr,{children:"Task deadline:"}),d.jsx(Lr,{children:new Date((r==null?void 0:r.deadline)||"").toLocaleString()})]}),d.jsxs(Dr,{children:[d.jsx(Nr,{children:"Done:"}),d.jsxs(Lr,{children:[r!=null&&r.done?d.jsx(qs,{}):d.jsx(e3,{})," ",r==null?void 0:r.done.toString()]})]}),d.jsxs(Dr,{children:[d.jsx(Nr,{children:"Pinned:"}),d.jsxs(Lr,{children:[r!=null&&r.pinned?d.jsx(qs,{}):d.jsx(e3,{})," ",r==null?void 0:r.pinned.toString()]})]}),d.jsxs(Dr,{children:[d.jsx(Nr,{children:"Categories:"}),d.jsx(Lr,{children:d.jsx(SU,{children:(o=r==null?void 0:r.category)==null?void 0:o.map(a=>d.jsx(ju,{backgroundclr:a.color,glow:!1,label:a.name,avatar:a.emoji?d.jsx(Qr,{alt:a.name,sx:{background:"transparent",borderRadius:"0px"},children:a.emoji&&(e.emojisStyle===Fe.NATIVE?d.jsx("div",{children:d.jsx(dt,{size:18,unified:a.emoji,emojiStyle:Fe.NATIVE})}):d.jsx(dt,{size:20,unified:a.emoji,emojiStyle:e.emojisStyle}))}):d.jsx(d.Fragment,{})},a.id))})})]})]})})]})]}):d.jsx(dg,{})},bU=G.div`
   display: flex;
   flex-direction: column;
-  background-color: #3a3d5a;
-  padding: 16px 24px;
-  border-radius: 24px;
+  background-color: ${e=>e.color};
+  padding: 16px;
+  border-radius: 32px;
   margin: 0 auto;
   margin-top: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: 768px) {
+    padding: 24px;
+    width: 70%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 50%;
+  }
 `,xU=G.h2`
   margin: 8px;
   text-align: center;
+  font-size: 1.5em;
+
+  @media (min-width: 768px) {
+    font-size: 1.8em;
+  }
 `,wU=G.table`
   width: 100%;
   border-collapse: collapse;
+  margin-top: 16px;
 `,Dr=G.tr`
   border-bottom: 2px solid #d9d9d9bc;
+
+  &:last-child {
+    border-bottom: none;
+  }
 `,Nr=G.th`
   text-align: left;
   padding: 8px;
+  font-size: 1em;
+
+  @media (min-width: 768px) {
+    font-size: 1.2em;
+  }
 `,Lr=G.td`
   text-align: left;
   padding: 8px;
   display: flex;
   align-items: center;
   gap: 6px;
+  font-size: 1em;
+
+  @media (min-width: 768px) {
+    font-size: 1.1em;
+  }
 `,kU=G.div`
   width: 20px;
   height: 20px;
