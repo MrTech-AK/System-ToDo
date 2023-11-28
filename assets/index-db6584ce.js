@@ -432,7 +432,7 @@ from {
   margin: 24px 0 12px 0;
   border-radius: 24px;
   width: 650px;
-  /* border: 1px solid #44479cb7; */
+  border: 1px solid #44479cb7;
   @media (min-width: 1024px) {
     padding: 24px;
   }
