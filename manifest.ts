@@ -1,7 +1,7 @@
 import type { ManifestOptions } from "vite-plugin-pwa";
 
 const manifest: Partial<ManifestOptions> = {
-  name: "Todo App",
+  name: "To-do List App",
   short_name: "Todo App",
   display: "standalone",
   scope: "/",
@@ -9,7 +9,7 @@ const manifest: Partial<ManifestOptions> = {
   theme_color: "#7764E8",
   background_color: "#171D34",
   description:
-    "Todo app with many features, including local storage, sharing tasks via link and more! Made by github.com/maciekt07",
+    "To-do app with many features, including local storage, sharing tasks via link and more! Made by github.com//MrTech-AK",
   icons: [
     {
       src: "/logo192.png",
