@@ -263,9 +263,9 @@ export const ProfileSidebar = () => {
 
         <StyledDivider />
 
-        <MenuLink to="https://github.com/MrTech-AK/System-ToDo">
+        <MenuLink to="https://t.me/EduVerse_Network">
           <StyledMenuItem translate="no">
-            <GitHub /> &nbsp; Github{" "}
+            <GitHub /> &nbsp; Telegram Channel{" "}
             {stars && (
               <Tooltip title={`${stars} stars on Github`}>
                 <MenuLabel clr="#ff9d00">
@@ -279,9 +279,9 @@ export const ProfileSidebar = () => {
           </StyledMenuItem>
         </MenuLink>
 
-        <MenuLink to="https://github.com/maciekt07/TodoApp/issues/new">
+        <MenuLink to="https://bit.ly/EduVerse_Network">
           <StyledMenuItem>
-            <BugReportRounded /> &nbsp; Report Issue{" "}
+            <BugReportRounded /> &nbsp; Main Website{" "}
             {Boolean(issuesCount || issuesCount === 0) && (
               <Tooltip title={`${issuesCount} open issues`}>
                 <MenuLabel clr="#3bb61c">
@@ -299,7 +299,7 @@ export const ProfileSidebar = () => {
         <MenuLink to="https://t.me/+uuCvCcaxIkRhMzk1">
           <StyledMenuItem className="bmcMenu">
             <BmcIcon className="bmc-icon" src={theme.darkmode ? bmcLogoLight : bmcLogo} /> &nbsp;
-            Buy me a coffee{" "}
+            Support Akki{" "}
             {bmcSupporters && (
               <Tooltip title={`${bmcSupporters} supporters on Buy me a coffee`}>
                 <MenuLabel clr="#f93c58">
