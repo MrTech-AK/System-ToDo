@@ -295,22 +295,7 @@ export const ProfileSidebar = () => {
           </StyledMenuItem>
         </MenuLink>
 
-        <MenuLink to="https://www.buymeacoffee.com/maciekt07">
-          <StyledMenuItem className="bmcMenu">
-            <BmcIcon className="bmc-icon" src={theme.darkmode ? bmcLogoLight : bmcLogo} /> &nbsp;
-            Buy me a coffee{" "}
-            {bmcSupporters && (
-              <Tooltip title={`${bmcSupporters} supporters on Buy me a coffee`}>
-                <MenuLabel clr="#f93c58">
-                  <span style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <FavoriteRounded style={{ fontSize: "16px" }} />
-                    &nbsp;{bmcSupporters}
-                  </span>
-                </MenuLabel>
-              </Tooltip>
-            )}
-          </StyledMenuItem>
-        </MenuLink>
+        
 
         <StyledDivider />
 
@@ -342,38 +327,13 @@ export const ProfileSidebar = () => {
             </StyledMenuItem>
           )}
 
-        <StyledMenuItem onClick={handleLogoutConfirmationOpen} sx={{ color: "#ff4040 !important" }}>
-          <Logout /> &nbsp; Logout
-        </StyledMenuItem>
+        
 
         <ProfileOptionsBottom>
-          <SettingsMenuItem
-            onClick={() => {
-              setOpenSettings(true);
-              handleClose();
-            }}
-          >
-            <SettingsRounded /> &nbsp; Settings
-            {settings === defaultUser.settings && <PulseMenuLabel />}
-          </SettingsMenuItem>
+          
 
           <StyledDivider />
-          <MenuLink to="/user">
-            <ProfileMenuItem translate={name ? "no" : "yes"} onClick={handleClose}>
-              <UserAvatar
-                src={(profilePicture as string) || undefined}
-                hasimage={profilePicture !== null}
-                size="44px"
-              >
-                {name ? name[0].toUpperCase() : undefined}
-              </UserAvatar>
-              <h4 style={{ margin: 0, fontWeight: 600 }}> {name || "User"}</h4>{" "}
-              {(name === null || name === "") &&
-                profilePicture === null &&
-                user.theme === defaultUser.theme && <PulseMenuLabel />}
-            </ProfileMenuItem>
-          </MenuLink>
-
+          
           <StyledDivider />
 
           <CreditsContainer translate="no">
@@ -384,9 +344,9 @@ export const ProfileSidebar = () => {
             <span style={{ marginLeft: "6px", marginRight: "4px" }}>by</span>
             <a
               style={{ textDecoration: "none", color: "inherit" }}
-              href="https://github.com/maciekt07"
+              href="https://t.me/Akki_IzPro"
             >
-              maciekt07
+              Akki_IzPro
             </a>
           </CreditsContainer>
           <CreditsContainer>
